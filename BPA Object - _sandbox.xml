@@ -110,7 +110,7 @@ You will not be able to call this action from a business process, nor will it be
     <narrative>Initialise Page
 
 This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
-
+sdghkdsfhgdkfljhglsdkfhgdlkjh
 The initialise action will be called automatically immediately after loading your business object.
 
 You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
