@@ -31,8 +31,8 @@
       <zoom version="2">1.25</zoom>
     </view>
   </subsheet>
-  <subsheet subsheetid="a266c32c-f2f9-43f4-affe-e63659cce77f" type="Normal" published="False">
-    <name>second action</name>
+  <subsheet subsheetid="6451ebfa-a3cd-4222-8d32-60b2e955d700" type="Normal" published="False">
+    <name>third new action int eh code</name>
     <view>
       <camerax>0</camerax>
       <cameray>0</cameray>
@@ -106,7 +106,7 @@ The cleanup action will be called automatically immediately after closing your b
 You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
     <display x="-180" y="60" w="180" h="230" />
   </stage>
-  <stage stageid="6a2c1a84-593d-4a45-b3d5-31451b2f383b" name="Note2" type="Note">
+  <stage stageid="6a2c1a84-593d-4a45-b3d5-31451b2f383b" name="Note2someother name ot create change" type="Note">
     <narrative>Initialise Page
 
 This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
@@ -151,19 +151,26 @@ You will not be able to call this action from a business process, nor will it be
     <private />
     <alwaysinit />
   </stage>
-  <stage stageid="f05c6144-bcc0-4bdc-b402-5eb51d587d5a" name="second action" type="SubSheetInfo">
-    <subsheetid>a266c32c-f2f9-43f4-affe-e63659cce77f</subsheetid>
+  <stage stageid="5dea07eb-83f5-4bf3-bb69-5d02290c3c88" name="third new action int eh code" type="SubSheetInfo">
+    <subsheetid>6451ebfa-a3cd-4222-8d32-60b2e955d700</subsheetid>
     <display x="-195" y="-105" w="150" h="90" />
   </stage>
-  <stage stageid="4182a19f-d2f3-413b-b627-ca2733b2561a" name="Start" type="Start">
-    <subsheetid>a266c32c-f2f9-43f4-affe-e63659cce77f</subsheetid>
+  <stage stageid="f69c070b-c882-4f38-8491-c69d2f8594a8" name="Start" type="Start">
+    <subsheetid>6451ebfa-a3cd-4222-8d32-60b2e955d700</subsheetid>
     <loginhibit />
     <display x="15" y="-105" />
-    <onsuccess>c03eb697-8fc8-40a8-9e02-d043a5cb1a87</onsuccess>
+    <onsuccess>3d47fcde-0468-4320-b191-df7335330a51</onsuccess>
   </stage>
-  <stage stageid="c03eb697-8fc8-40a8-9e02-d043a5cb1a87" name="End" type="End">
-    <subsheetid>a266c32c-f2f9-43f4-affe-e63659cce77f</subsheetid>
+  <stage stageid="f0f57fcf-6e58-4582-b547-c8cde5aee5dc" name="End" type="End">
+    <subsheetid>6451ebfa-a3cd-4222-8d32-60b2e955d700</subsheetid>
     <loginhibit />
     <display x="15" y="90" />
+  </stage>
+  <stage stageid="3d47fcde-0468-4320-b191-df7335330a51" name="Note3" type="Note">
+    <subsheetid>6451ebfa-a3cd-4222-8d32-60b2e955d700</subsheetid>
+    <loginhibit />
+    <narrative>new note</narrative>
+    <display x="15" y="-15" />
+    <onsuccess>f0f57fcf-6e58-4582-b547-c8cde5aee5dc</onsuccess>
   </stage>
 </process>
