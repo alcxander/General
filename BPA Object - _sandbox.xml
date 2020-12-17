@@ -1,0 +1,176 @@
+﻿<process name="_sandbox" version="1.0" bpversion="6.8.0.23415" narrative="" byrefcollection="true" type="object" runmode="Exclusive" preferredid="91b9d194-9230-4ed5-9495-24e3db52b349">
+  <appdef>
+    <element name="Application Root">
+      <id>f9a28019-6fab-41b5-90c7-1e84a36fc2dd</id>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="4edc0f3d-a66e-415a-9a20-78dd2e82a92a" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="47c9095e-1188-4e38-b61f-8b3c89087078" type="Normal" published="False">
+    <name>Action 1</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="6451ebfa-a3cd-4222-8d32-60b2e955d700" type="Normal" published="False">
+    <name>third new action int eh code</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="be59fcc2-008f-4369-9f46-80c4a6315c8e" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>29feeedc-9bbe-4294-8f53-07b85b12cfde</onsuccess>
+  </stage>
+  <stage stageid="29feeedc-9bbe-4294-8f53-07b85b12cfde" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="bfc5c29e-d4e0-4a81-be43-3054cde592d6" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="80056a3c-854b-4c14-bf6c-480cb00d0057" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>4edc0f3d-a66e-415a-9a20-78dd2e82a92a</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="1617f93d-abb8-44ff-a1e1-a5bf1cff25d8" name="Start" type="Start">
+    <subsheetid>4edc0f3d-a66e-415a-9a20-78dd2e82a92a</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>b79c6aca-1e39-41f8-87c1-0c2384e01457</onsuccess>
+  </stage>
+  <stage stageid="b79c6aca-1e39-41f8-87c1-0c2384e01457" name="End" type="End">
+    <subsheetid>4edc0f3d-a66e-415a-9a20-78dd2e82a92a</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="e9985c27-cf2f-4133-8597-dcbbaaae5d82" name="Action 1" type="SubSheetInfo">
+    <subsheetid>47c9095e-1188-4e38-b61f-8b3c89087078</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="9b09279c-4e3a-44d8-8b2c-d39514c89a76" name="Start" type="Start">
+    <subsheetid>47c9095e-1188-4e38-b61f-8b3c89087078</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>15605751-71cc-44e2-b284-437879aff04d</onsuccess>
+  </stage>
+  <stage stageid="0b56d618-e05b-4c46-9981-11b75534bcef" name="End" type="End">
+    <subsheetid>47c9095e-1188-4e38-b61f-8b3c89087078</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="c33165f0-d6e4-447e-a08f-0f3d92b032cd" name="Note1" type="Note">
+    <subsheetid>4edc0f3d-a66e-415a-9a20-78dd2e82a92a</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="6a2c1a84-593d-4a45-b3d5-31451b2f383b" name="Note2" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="15605751-71cc-44e2-b284-437879aff04d" name="buzzwordGenerator::New Action" type="Action">
+    <subsheetid>47c9095e-1188-4e38-b61f-8b3c89087078</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <outputs>
+      <output type="text" name="Response Content" friendlyname="Response Content" stage="Response Content" />
+      <output type="text" name="HTTP Status Code" friendlyname="HTTP Status Code" stage="HTTP Status Code" />
+      <output type="collection" name="Response Headers" friendlyname="Response Headers" stage="Response Headers" />
+    </outputs>
+    <onsuccess>0b56d618-e05b-4c46-9981-11b75534bcef</onsuccess>
+    <resource object="buzzwordGenerator" action="New Action" />
+  </stage>
+  <stage stageid="231576ec-8607-4170-add9-b5f8a2a1ecec" name="Response Content" type="Data">
+    <subsheetid>47c9095e-1188-4e38-b61f-8b3c89087078</subsheetid>
+    <display x="-195" y="-30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8181077e-a31b-4c6f-8cbf-a240ac81a7bc" name="HTTP Status Code" type="Data">
+    <subsheetid>47c9095e-1188-4e38-b61f-8b3c89087078</subsheetid>
+    <display x="-195" y="15" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c127e368-99a2-45a5-ba9f-8a1b8657bf90" name="Response Headers" type="Collection">
+    <subsheetid>47c9095e-1188-4e38-b61f-8b3c89087078</subsheetid>
+    <display x="-195" y="60" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5dea07eb-83f5-4bf3-bb69-5d02290c3c88" name="third new action int eh code" type="SubSheetInfo">
+    <subsheetid>6451ebfa-a3cd-4222-8d32-60b2e955d700</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="f69c070b-c882-4f38-8491-c69d2f8594a8" name="Start" type="Start">
+    <subsheetid>6451ebfa-a3cd-4222-8d32-60b2e955d700</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>3d47fcde-0468-4320-b191-df7335330a51</onsuccess>
+  </stage>
+  <stage stageid="f0f57fcf-6e58-4582-b547-c8cde5aee5dc" name="End" type="End">
+    <subsheetid>6451ebfa-a3cd-4222-8d32-60b2e955d700</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="3d47fcde-0468-4320-b191-df7335330a51" name="Note3" type="Note">
+    <subsheetid>6451ebfa-a3cd-4222-8d32-60b2e955d700</subsheetid>
+    <loginhibit />
+    <narrative>new note</narrative>
+    <display x="15" y="-15" />
+    <onsuccess>f0f57fcf-6e58-4582-b547-c8cde5aee5dc</onsuccess>
+  </stage>
+</process>
