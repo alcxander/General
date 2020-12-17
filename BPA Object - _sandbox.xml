@@ -31,8 +31,8 @@
       <zoom version="2">1.25</zoom>
     </view>
   </subsheet>
-  <subsheet subsheetid="606d95b1-ef50-40f2-a595-c1ec0ab73da1" type="Normal" published="True">
-    <name>rtester</name>
+  <subsheet subsheetid="a266c32c-f2f9-43f4-affe-e63659cce77f" type="Normal" published="False">
+    <name>second action</name>
     <view>
       <camerax>0</camerax>
       <cameray>0</cameray>
@@ -151,26 +151,19 @@ You will not be able to call this action from a business process, nor will it be
     <private />
     <alwaysinit />
   </stage>
-  <stage stageid="b6e4edf6-6bf0-4119-ba3d-141a995f812a" name="rtester" type="SubSheetInfo">
-    <subsheetid>606d95b1-ef50-40f2-a595-c1ec0ab73da1</subsheetid>
+  <stage stageid="f05c6144-bcc0-4bdc-b402-5eb51d587d5a" name="second action" type="SubSheetInfo">
+    <subsheetid>a266c32c-f2f9-43f4-affe-e63659cce77f</subsheetid>
     <display x="-195" y="-105" w="150" h="90" />
   </stage>
-  <stage stageid="b8a29c15-c045-4fb7-9862-80f021140a30" name="Start" type="Start">
-    <subsheetid>606d95b1-ef50-40f2-a595-c1ec0ab73da1</subsheetid>
+  <stage stageid="4182a19f-d2f3-413b-b627-ca2733b2561a" name="Start" type="Start">
+    <subsheetid>a266c32c-f2f9-43f4-affe-e63659cce77f</subsheetid>
     <loginhibit />
     <display x="15" y="-105" />
-    <onsuccess>4373989c-a7bc-4095-9830-e4470a630795</onsuccess>
+    <onsuccess>c03eb697-8fc8-40a8-9e02-d043a5cb1a87</onsuccess>
   </stage>
-  <stage stageid="dfbcb728-293b-468e-a0ab-d50429aadf62" name="End" type="End">
-    <subsheetid>606d95b1-ef50-40f2-a595-c1ec0ab73da1</subsheetid>
+  <stage stageid="c03eb697-8fc8-40a8-9e02-d043a5cb1a87" name="End" type="End">
+    <subsheetid>a266c32c-f2f9-43f4-affe-e63659cce77f</subsheetid>
     <loginhibit />
     <display x="15" y="90" />
-  </stage>
-  <stage stageid="4373989c-a7bc-4095-9830-e4470a630795" name="plus one test::Action 1" type="Action">
-    <subsheetid>606d95b1-ef50-40f2-a595-c1ec0ab73da1</subsheetid>
-    <loginhibit onsuccess="true" />
-    <display x="15" y="-15" />
-    <onsuccess>dfbcb728-293b-468e-a0ab-d50429aadf62</onsuccess>
-    <resource object="plus one test" action="Action 1" />
   </stage>
 </process>
