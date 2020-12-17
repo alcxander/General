@@ -106,7 +106,7 @@ The cleanup action will be called automatically immediately after closing your b
 You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
     <display x="-180" y="60" w="180" h="230" />
   </stage>
-  <stage stageid="6a2c1a84-593d-4a45-b3d5-31451b2f383b" name="Note2" type="Note">
+  <stage stageid="6a2c1a84-593d-4a45-b3d5-31451b2f383b" name="Note2someother name ot create change" type="Note">
     <narrative>Initialise Page
 
 This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
